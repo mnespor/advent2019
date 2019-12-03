@@ -5,3 +5,6 @@
   (-> path
       slurp
       str/split-lines))
+
+(defn parse-int [s]
+  (Integer/parseInt (str/trim s)))
